@@ -15,4 +15,4 @@
     <?php include 'src/layout/footer.html'; ?>
     </html>
 
-    <?php include 'mainPHP.php' ?>
+    <?php include 'src/mainPHP.php' ?>
