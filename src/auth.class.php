@@ -1,19 +1,14 @@
 <?php
 
 class Auth {
-    private $connection;
 
-    public function __construct($connection) {
-        $this->connection = $connection;
-    }
-
-    public function login($username, $password) {
+    public static function login($username, $password, $connection) {
         if(empty($username) || empty($password)){
             return false;
         }
 
         $sql = "SELECT * FROM users WHERE username = ?";
-        $stmt = mysqli_prepare($this->connection, $sql);
+        $stmt = mysqli_prepare($connection, $sql);
         mysqli_stmt_bind_param($stmt, "s", $username);
         mysqli_stmt_execute($stmt);
         $result = mysqli_stmt_get_result($stmt);
@@ -33,11 +28,11 @@ class Auth {
         }
     }
 
-    public function isLoggedIn() {
+    public static function isLoggedIn() {
         return isset($_SESSION["loggedIn"]) && $_SESSION["loggedIn"] === true;
     }
 
-    public function logout() {
+    public static function logout() {
         session_destroy();
     }
 }

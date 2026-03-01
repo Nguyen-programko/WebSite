@@ -1,0 +1,20 @@
+{
+    "books": [
+        {
+            "title": "The Great Gatsby",
+            "author": "F. Scott Fitzgerald",
+            "genre": "Novel",
+            "year": 1925,
+            "price": 4.50 ,
+            "review": 4.7
+        },
+        {
+            "title": "1984",
+            "author": "George Orwell",
+            "genre": "Dystopian",
+            "year": 1949,
+            "price": 7.99,
+            "review": 4.6
+        }
+    ]
+}

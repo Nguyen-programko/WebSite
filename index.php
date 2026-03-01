@@ -3,13 +3,13 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>My Website</title>
+        <title>Admin Log in</title>
     </head>
     <?php include 'src/layout/header.html'; ?>
 
     <body>
         <form action="<?php htmlspecialchars($_SERVER["PHP_SELF"]) ?>" method="post">
-            <h2>Log in</h2>
+            <h2>Log in as a admin</h2>
             <label for="username">Username</label><br>
             <input type="text" name="username"><br>
             <label for="password">Password</label><br>
@@ -23,6 +23,6 @@
     <?php include 'src/layout/footer.html'; ?>
     </html>
 
-    <?php include 'src/mainPHP.php' ?>
+    <?php include 'src/indexPHP.php' ?>
 
   
