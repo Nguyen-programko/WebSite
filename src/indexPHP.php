@@ -1,8 +1,8 @@
 
 
 <?php
-    include 'database.class.php';
-    include 'Auth.class.php';
+    include 'classes/database.class.php';
+    include 'classes/Auth.class.php';
     session_start();
 
     if($_SERVER["REQUEST_METHOD"] == "POST"){

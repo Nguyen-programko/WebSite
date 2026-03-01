@@ -1,9 +1,9 @@
 <?php
-    include 'database.class.php';
-    include 'books.class.php';
+    include 'classes/database.class.php';
+    include 'classes/books.class.php';
 
     if($_SERVER["REQUEST_METHOD"] == "GET"){
-        Books::loadBooks();
+        Books::loadBooks($connection);
 
     }
 ?>

@@ -15,6 +15,70 @@
             "year": 1949,
             "price": 7.99,
             "review": 4.6
+        },
+        {
+            "title": "To Kill a Mockingbird",
+            "author": "Harper Lee",
+            "genre": "Classic",
+            "year": 1960,
+            "price": 8.99,
+            "review": 4.8
+        },
+        {
+            "title": "Harry Potter and the Sorcerer's Stone",
+            "author": "J.K. Rowling",
+            "genre": "Fantasy",
+            "year": 1997,
+            "price": 10.99,
+            "review": 4.9
+        },
+        {
+            "title": "The Hobbit",
+            "author": "J.R.R. Tolkien",
+            "genre": "Fantasy",
+            "year": 1937,
+            "price": 9.49,
+            "review": 4.8
+        },
+        {
+            "title": "The Da Vinci Code",
+            "author": "Dan Brown",
+            "genre": "Thriller",
+            "year": 2003,
+            "price": 9.99,
+            "review": 4.5
+        },
+        {
+            "title": "Dune",
+            "author": "Frank Herbert",
+            "genre": "Science Fiction",
+            "year": 1965,
+            "price": 11.99,
+            "review": 4.7
+        },
+        {
+            "title": "The Alchemist",
+            "author": "Paulo Coelho",
+            "genre": "Fiction",
+            "year": 1988,
+            "price": 8.49,
+            "review": 4.6
+        },
+        {
+            "title": "Atomic Habits",
+            "author": "James Clear",
+            "genre": "Self-Help",
+            "year": 2018,
+            "price": 13.99,
+            "review": 4.8
+        },
+        {
+            "title": "The Hunger Games",
+            "author": "Suzanne Collins",
+            "genre": "Dystopian",
+            "year": 2008,
+            "price": 8.99,
+            "review": 4.7
         }
     ]
 }
