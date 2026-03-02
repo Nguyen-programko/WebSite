@@ -1,10 +1,15 @@
 <?php
 
 class Books {
+    private $connection;
 
-    public static function getBooksDB($connection): array {
+    public function __construct($connection) {
+        $this->connection = $connection;
+    }
+
+    public function getBooksDB(): array {
         $sql = "SELECT title, author, genre, year, price, review FROM bookrecords";
-        $stmt = mysqli_prepare($connection, $sql);
+        $stmt = mysqli_prepare($this->connection, $sql);
 
         if (!$stmt) {
             throw new RuntimeException("Query preparation failed.");
@@ -19,7 +24,7 @@ class Books {
     }
 
 
-    public static function loadBooksJSON($connection): void {
+    public function loadBooksJSON(): void {
         $filePath ='src/books.json';
 
         if (!file_exists($filePath)) {
@@ -46,13 +51,13 @@ class Books {
             }
 
             if ($isValid) {
-                Books::addBookDB(Books::sanitizeBook($book), $connection);
+                Books::addBookDB(Books::sanitizeBook($book));
             }
         }
     }
 
 
-    private static function sanitizeBook(array $book): array {
+    private function sanitizeBook(array $book): array {
         return [
             "title"  => htmlspecialchars(trim($book["title"]),  ENT_QUOTES, 'UTF-8'),
             "author" => htmlspecialchars(trim($book["author"]), ENT_QUOTES, 'UTF-8'),
@@ -63,11 +68,11 @@ class Books {
         ];
     }
 
-    private static function addBookDB(array $book, $connection): void {
+    public function addBookDB(array $book): void {
         $sql = "INSERT INTO bookrecords (title, author, genre, year, price, review)
                 VALUES (?, ?, ?, ?, ?, ?)";
 
-        $stmt = mysqli_prepare($connection, $sql);
+        $stmt = mysqli_prepare($this->connection, $sql);
 
         if (!$stmt) {
             throw new RuntimeException("Insert preparation failed.");

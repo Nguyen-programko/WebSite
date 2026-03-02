@@ -21,5 +21,5 @@
     <?php include 'src/layout/footer.html'; ?>
     </html>
 
-    <?php include 'src/booksListPHP.php' ?>
+    <?php include 'src/php/booksListPHP.php' ?>
     <script src="src/javascript/booksListJS.js"></script>

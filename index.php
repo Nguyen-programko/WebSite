@@ -8,7 +8,7 @@
     <?php include 'src/layout/header.html'; ?>
 
     <body>
-        <form action="<?php htmlspecialchars($_SERVER["PHP_SELF"]) ?>" method="post">
+        <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]) ?>" method="post">
             <h2>Log in as a admin</h2>
             <label for="username">Username</label><br>
             <input type="text" name="username"><br>
@@ -23,6 +23,6 @@
     <?php include 'src/layout/footer.html'; ?>
     </html>
 
-    <?php include 'src/indexPHP.php' ?>
+    <?php include 'src/php/indexPHP.php' ?>
 
   
