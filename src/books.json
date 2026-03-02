@@ -4,6 +4,7 @@
             "title": "1984",
             "author": "George Orwell",
             "genre": "Dystopian",
+            "sinopsis": "In a totalitarian future society, Winston Smith works for the Party rewriting history. He begins a forbidden love affair and secretly rebels against the oppressive regime of Big Brother, where even thoughts are a crime.",
             "year": 1949,
             "price": 7.99,
             "review": 4.6
@@ -12,6 +13,7 @@
             "title": "To Kill a Mockingbird",
             "author": "Harper Lee",
             "genre": "Classic",
+            "sinopsis": "Young Scout Finch watches her father, lawyer Atticus Finch, defend a Black man falsely accused of rape in 1930s Alabama, learning hard lessons about justice, morality, and racial inequality in the American South.",
             "year": 1960,
             "price": 8.99,
             "review": 4.8
@@ -20,6 +22,7 @@
             "title": "Harry Potter and the Sorcerer's Stone",
             "author": "J.K. Rowling",
             "genre": "Fantasy",
+            "sinopsis": "Orphan Harry Potter discovers on his eleventh birthday that he is a wizard and is accepted into Hogwarts School of Witchcraft and Wizardry, where he uncovers the truth about his parents' death and faces the dark lord Voldemort.",
             "year": 1997,
             "price": 10.99,
             "review": 4.9
@@ -28,6 +31,7 @@
             "title": "The Hobbit",
             "author": "J.R.R. Tolkien",
             "genre": "Fantasy",
+            "sinopsis": "Bilbo Baggins, a comfort-loving hobbit, is swept into an epic quest with a group of dwarves and the wizard Gandalf to reclaim the dwarves' mountain home from the fearsome dragon Smaug.",
             "year": 1937,
             "price": 9.49,
             "review": 4.8
@@ -36,6 +40,7 @@
             "title": "The Da Vinci Code",
             "author": "Dan Brown",
             "genre": "Thriller",
+            "sinopsis": "Harvard symbologist Robert Langdon is drawn into a dangerous mystery when a curator is murdered inside the Louvre, leaving behind a trail of clues hidden in the works of Leonardo Da Vinci pointing to a centuries-old secret.",
             "year": 2003,
             "price": 9.99,
             "review": 4.5
@@ -44,6 +49,7 @@
             "title": "Dune",
             "author": "Frank Herbert",
             "genre": "Science Fiction",
+            "sinopsis": "Young Paul Atreides and his family take control of the desert planet Arrakis, the only source of the most valuable substance in the universe. Betrayal, survival, and destiny collide as Paul embraces his role among the planet's native people.",
             "year": 1965,
             "price": 11.99,
             "review": 4.7
@@ -52,6 +58,7 @@
             "title": "The Alchemist",
             "author": "Paulo Coelho",
             "genre": "Fiction",
+            "sinopsis": "A young Andalusian shepherd named Santiago travels from Spain to Egypt in search of treasure, discovering along the way that the real journey is about following your dreams and listening to your heart.",
             "year": 1988,
             "price": 8.49,
             "review": 4.6
@@ -60,6 +67,7 @@
             "title": "Atomic Habits",
             "author": "James Clear",
             "genre": "Self-Help",
+            "sinopsis": "James Clear presents a proven framework for building good habits and breaking bad ones, arguing that tiny changes and small improvements compound over time into remarkable results that transform your life.",
             "year": 2018,
             "price": 13.99,
             "review": 4.8
@@ -68,10 +76,10 @@
             "title": "The Hunger Games",
             "author": "Suzanne Collins",
             "genre": "Dystopian",
+            "sinopsis": "In a dystopian future, sixteen-year-old Katniss Everdeen volunteers to take her sister's place in the Hunger Games — a televised death match where teenagers fight to the death as punishment for a past rebellion against the Capitol.",
             "year": 2008,
             "price": 8.99,
             "review": 4.7
         }
     ]
 }
-

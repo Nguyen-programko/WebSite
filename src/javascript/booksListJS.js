@@ -20,7 +20,8 @@ const loadBooksAsync = async () => {
             <button class="toggle_Btn" id="toggle_Btn">Show more</button>
             <button class="print_Btn" id="print_Btn">Print</button>
 
-            <div class="extra_Info" style="display:none;">
+            <div class="extra_Info" id="extra_Info" style="display:none;">
+                <p><strong>Sinopsis:</strong> ${book.sinopsis}</p>
                 <p><strong>Year:</strong> ${book.year}</p>
                 <p><strong>Price:</strong> $${book.price}</p>
                 <p><strong>Review:</strong> ${book.review} / 5</p>
@@ -49,6 +50,7 @@ const loadBooksAsync = async () => {
                 <p><strong>Author:</strong> ${book.author}</p>
                 <p><strong>Genre:</strong> ${book.genre}</p>
                 <p><strong>Year:</strong> ${book.year}</p>
+                <p><strong>Sinopsis:</strong> ${book.sinopsis}</p>
                 <p><strong>Price:</strong> $${book.price}</p>
                 <p><strong>Review:</strong> ${book.review} / 5</p>
             `;
