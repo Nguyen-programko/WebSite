@@ -83,14 +83,10 @@ class AdminController {
         if(empty($title))          $errors[] = "Title is required.";
         if(empty($author))         $errors[] = "Author is required.";
         if(empty($genre))          $errors[] = "Genre is required.";
-<<<<<<< HEAD
         if(empty($sinopsis))       $errors[] = "Sinopsis is required.";
-=======
-        if(enpty($sinopsis))       $errors[] = "Sinopsis is required.";
->>>>>>> 3c8d670b52390da542628a49f58b0b073f7fd96b
-        if($year === false)        $errors[] = "Year must be between 0 and 9999.";
-        if($price === false)       $errors[] = "Price must be a positive number.";
-        if($review === false)      $errors[] = "Review must be between 0 and 5.";
+        if(empty($year))           $errors[] = "Year must be between 0 and 9999.";
+        if(empty($price))          $errors[] = "Price must be a positive number.";
+        if(empty($review))         $errors[] = "Review must be between 0 and 5.";
 
         return $errors;
     }
