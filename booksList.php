@@ -8,7 +8,13 @@
     <?php include 'src/layout/header.html'; ?>
 
     <body>
-        <h1>Epstein fuck niggers</h1>
+        <div class="admin_Container">
+            <a href="adminSite.php">Add books</a>
+        </div>
+        <hr>
+        <div class="books_Container" id="books_Container">
+
+        </div>
     </body>
 
 
@@ -16,3 +22,4 @@
     </html>
 
     <?php include 'src/booksListPHP.php' ?>
+    <script src="src/javascript/booksListJS.js"></script>
