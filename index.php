@@ -1,4 +1,4 @@
-<?php include 'src/php/indexPHP.php'; ?>
+<?php include 'src/php/IndexController.php'; ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,12 +10,12 @@
 
 <body>
 
-    <?php if($auth->isLoggedIn()): ?>
+    <?php if($controller->isLoggedIn()): ?>
 
-        <p>Welcome, <?= $_SESSION["username"] ?>!</p>
-        <form action="<?= htmlspecialchars($_SERVER["PHP_SELF"]) ?>" method="post">
-            <button type="submit" name="action" value="logout">Log out</button>
-        </form>
+    <p>Welcome, <?= $controller->getUsername() ?>!</p>
+    <form method="post">
+        <button type="submit" name="action" value="logout">Log out</button>
+    </form>
 
     <?php else: ?>
 
@@ -28,8 +28,8 @@
             <button type="submit" name="action" value="login">Log in</button>
         </form>
 
-        <?php if(isset($loginError)): ?>
-            <p style="color:red"><?= $loginError ?></p>
+        <?php if($error = $controller->getLoginError()): ?>
+            <p style="color:red"><?= $error ?></p>
         <?php endif; ?>
 
     <?php endif; ?>

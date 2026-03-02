@@ -1,4 +1,4 @@
-    <?php include 'src/php/adminSitePHP.php'?>
+    <?php include 'src/php/AdminController.php'?>
     <!DOCTYPE html>
     <html lang="en">
     <head>
@@ -23,10 +23,10 @@
             <label for="year">Year of release</label><br>
             <input type="number" name="year" min="0" max="9999"  required><br>
 
-            <label for="price">Book's price (Amazon)</label><br>
+            <label for="price">Book's price in $USD</label><br>
             <input type="number" name="price" min="0" required><br>
 
-            <label for="review">Book's review - out of 5 (Amazon)</label><br>
+            <label for="review">Book's review - out of 5</label><br>
             <input type="number" name="review" max="5" step="any" required><br>
 
 
