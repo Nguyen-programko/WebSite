@@ -11,7 +11,7 @@ class AdminController {
     }
 
     public function handle(): void {
-        if($_SERVER["REQUEST_METHOD"] == "GET"){
+        if($_SERVER["REQUEST_METHOD"] == "GET" || $_SERVER["REQUEST_METHOD"] == "POST"){
             $this->handleGet();
         }
 
@@ -74,14 +74,14 @@ class AdminController {
         $title  = filter_input(INPUT_POST, "title",  FILTER_SANITIZE_SPECIAL_CHARS);
         $author = filter_input(INPUT_POST, "author", FILTER_SANITIZE_SPECIAL_CHARS);
         $genre  = filter_input(INPUT_POST, "genre",  FILTER_SANITIZE_SPECIAL_CHARS);
-        $year   = filter_input(INPUT_POST, "year",   FILTER_VALIDATE_INT, ["options" => ["min_range" => 1000, "max_range" => 9999]]);
+        $year   = filter_input(INPUT_POST, "year",   FILTER_VALIDATE_INT, ["options" => ["min_range" => 0, "max_range" => 9999]]);
         $price  = filter_input(INPUT_POST, "price",  FILTER_VALIDATE_FLOAT, ["options" => ["min_range" => 0]]);
         $review = filter_input(INPUT_POST, "review", FILTER_VALIDATE_FLOAT, ["options" => ["min_range" => 0, "max_range" => 5]]);
 
         if(empty($title))          $errors[] = "Title is required.";
         if(empty($author))         $errors[] = "Author is required.";
         if(empty($genre))          $errors[] = "Genre is required.";
-        if($year === false)        $errors[] = "Year must be between 1000 and 9999.";
+        if($year === false)        $errors[] = "Year must be between 0 and 9999.";
         if($price === false)       $errors[] = "Price must be a positive number.";
         if($review === false)      $errors[] = "Review must be between 0 and 5.";
 
