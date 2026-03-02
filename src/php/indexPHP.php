@@ -8,17 +8,28 @@
     $auth = new Auth($connection);
 
     if($_SERVER["REQUEST_METHOD"] == "POST"){
-        $username = filter_input(INPUT_POST, "username", FILTER_SANITIZE_SPECIAL_CHARS);
-        $password = $_POST["password"]; 
+        $action = $_POST["action"] ?? '';
 
-        if($auth->login($username, $password)){
-            header("Location: booksList.php");
-            exit();
-        } else {
-            echo "Wrong username or password";
+        switch($action){
+            case 'login':
+                $username = filter_input(INPUT_POST, "username", FILTER_SANITIZE_SPECIAL_CHARS);
+                $password = $_POST["password"];
+                
+                if($auth->login($username, $password)){
+                    header("Location: " . $_SERVER["PHP_SELF"]);
+                    exit();
+                } else {
+                    $loginError = "Wrong username or password.";
+                }
+                break;
+
+            case 'logout':
+                $auth->logout();
+                header("Location: " . $_SERVER["PHP_SELF"]);
+                exit();
+                break;
         }
     }
-
     if($connection instanceof mysqli){
         mysqli_close($connection);
     }

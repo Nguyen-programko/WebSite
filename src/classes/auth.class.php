@@ -7,7 +7,7 @@ class Auth {
         $this->connection = $connection;
     }
 
-    public function login($username, $password) {
+    public function login($username, $password): bool {
         if(empty($username) || empty($password)){
             return false;
         }
@@ -33,11 +33,11 @@ class Auth {
         }
     }
 
-    public function isLoggedIn() {
+    public function isLoggedIn(): bool {
         return isset($_SESSION["loggedIn"]) && $_SESSION["loggedIn"] === true;
     }
 
-    public function logout() {
+    public function logout(): void {
         session_destroy();
     }
 }
