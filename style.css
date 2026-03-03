@@ -1,0 +1,349 @@
+.header {
+  background-color: #2c3e50;
+  color: #ffffff;
+  padding: 1rem 3rem;
+  height: 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.header__title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 0;
+}
+.header__nav {
+  margin-top: 1rem;
+}
+@media (min-width: 768px) {
+  .header__nav {
+    margin-top: 0;
+  }
+}
+.header__menu {
+  list-style: none;
+  display: flex;
+  gap: 3rem;
+  padding: 0;
+  margin: 0;
+}
+.header__item {
+  display: inline-block;
+}
+.header__link {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 500;
+  position: relative;
+  transition: 0.2s;
+}
+.header__link:hover {
+  color: #3498db;
+}
+.header__link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0;
+  height: 2px;
+  background-color: #3498db;
+  transition: 0.2s;
+}
+.header__link:hover::after {
+  width: 100%;
+}
+
+.footer {
+  height: 2%;
+  background: #2E3E50;
+  background-color: linear-gradient(180deg, rgb(46, 62, 80) 0%, rgb(62, 105, 144) 60%, rgb(255, 255, 255) 100%);
+  color: #ffffff;
+  padding: 1.5rem;
+  text-align: center;
+}
+.footer__text {
+  margin: 0;
+  font-size: 0.9rem;
+  opacity: 0.9;
+}
+.footer--light {
+  background-color: #f4f4f4;
+  color: #222;
+}
+
+.admin-panel {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+.admin-panel__title {
+  margin-bottom: 1rem;
+  color: #2c3e50;
+  font-size: 1.5rem;
+}
+.admin-panel__label {
+  display: block;
+  text-align: left;
+  margin: 0.5rem 0 0.2rem;
+  font-weight: 500;
+  color: #222;
+}
+.admin-panel__input {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  transition: border 0.2s;
+}
+.admin-panel__input:focus {
+  border-color: #3498db;
+  outline: none;
+}
+.admin-panel button {
+  width: 100%;
+  padding: 0.6rem;
+  border: none;
+  border-radius: 4px;
+  background-color: #2c3e50;
+  color: #ffffff;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+.admin-panel button:hover {
+  background-color: #3498db;
+}
+.admin-panel p {
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+}
+.admin-panel p.error {
+  color: #e74c3c;
+}
+.admin-panel p.success {
+  color: #27ae60;
+}
+
+.welcome-message {
+  text-align: center;
+  margin-bottom: 1rem;
+  color: #2c3e50;
+}
+.welcome-message__text {
+  font-weight: 500;
+  margin: 0.5rem 0;
+}
+.welcome-message__button {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 4px;
+  background-color: #2c3e50;
+  color: #ffffff;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+.welcome-message__button:hover {
+  background-color: #3498db;
+}
+
+.admin-panel {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+.admin-panel__link {
+  display: inline-block;
+  padding: 0.6rem 1.2rem;
+  background-color: #2c3e50;
+  color: #fff;
+  font-weight: 600;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background-color 0.2s;
+}
+.admin-panel__link:hover {
+  background-color: #3498db;
+}
+
+.books {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+}
+
+.book {
+  background-color: #fff;
+  border-radius: 6px;
+  padding: 1rem;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+  font-size: 1.3rem;
+}
+.book__title, .book__author, .book__year {
+  margin: 0.2rem 0;
+  font-weight: 500;
+}
+.book__toggle-btn, .book__print-btn {
+  padding: 0.4rem 0.8rem;
+  margin: 1rem 0.2rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  font-weight: 500;
+}
+.book__toggle-btn:hover, .book__print-btn:hover {
+  background-color: #3498db;
+  color: #fff;
+}
+.book__toggle-btn {
+  background-color: #2c3e50;
+  color: #fff;
+}
+.book__print-btn {
+  background-color: #555;
+  color: #fff;
+}
+.book__extra {
+  margin-top: 0.5rem;
+  padding: 1rem;
+  background-color: #f9f9f9;
+  border-radius: 6px;
+}
+
+.admin-page {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 1rem;
+}
+
+.book-form {
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 6px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+.book-form__title {
+  margin: 0 0 1rem;
+  color: #2c3e50;
+  font-size: 1.5rem;
+}
+.book-form__label {
+  font-weight: 500;
+  color: #222;
+}
+.book-form__input {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 95%;
+  transition: border 0.2s;
+}
+.book-form__input:focus {
+  border-color: #3498db;
+  outline: none;
+}
+.book-form__button {
+  padding: 0.6rem;
+  background-color: #2c3e50;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+.book-form__button:hover {
+  background-color: #3498db;
+}
+.book-form__errors {
+  margin-top: 0.5rem;
+}
+.book-form__error {
+  color: #e74c3c;
+  font-size: 0.9rem;
+}
+.book-form__success {
+  color: #27ae60;
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+}
+
+.json-add {
+  display: flex;
+  justify-content: center;
+}
+.json-add__form {
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 6px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+.json-add__title {
+  margin: 0;
+  color: #2c3e50;
+  font-size: 1.3rem;
+  text-align: center;
+}
+.json-add__button {
+  padding: 0.6rem 1.2rem;
+  background-color: #2c3e50;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+.json-add__button:hover {
+  background-color: #3498db;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.container {
+  flex: 1 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 3rem;
+}
+
+.header {
+  flex: 0 0 5%;
+}
+
+.container {
+  flex: 1 0 auto;
+  overflow-y: auto;
+}
+
+.footer {
+  flex: 0 0 2%;
+}
+
+/*# sourceMappingURL=style.css.map */

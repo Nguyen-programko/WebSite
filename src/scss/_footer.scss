@@ -1,0 +1,27 @@
+
+$color-primary: #2E3E50;
+$color-gradient: linear-gradient(180deg,rgba(46, 62, 80, 1) 0%, rgba(62, 105, 144, 1) 60%, rgba(255, 255, 255, 1) 100%);
+$color-text-light: #ffffff;
+$height: 2%;
+
+
+.footer {
+    height: $height;
+    background: $color-primary;
+    background-color: $color-gradient;
+    color: $color-text-light;
+    padding: 1.5rem;
+    text-align: center;
+
+    &__text {
+        margin: 0;
+        font-size: 0.9rem;
+        opacity: 0.9;
+    }
+
+    
+    &--light {
+        background-color: #f4f4f4;
+        color: #222;
+    }
+}

@@ -37,7 +37,7 @@ class IndexController {
                 $password = $_POST["password"];
 
                 if($this->auth->login($username, $password)){
-                    header("Location: " . $_SERVER["PHP_SELF"]);
+                    header("Location: " . "booksList.php");
                     exit();
                 } else {
                     $_SESSION["loginError"] = "Wrong username or password.";

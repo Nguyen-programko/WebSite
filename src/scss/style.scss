@@ -1,0 +1,51 @@
+@use "header";
+@use "footer";
+
+@use "index";
+@use "booksList";
+@use "adminSite";
+
+
+
+$padding-sides: 3rem;
+$padding-tb: 1rem;
+$viewport-height: 100vh;
+$percent-height: 100%;
+$primary-bg-color: darkgray;
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.container {
+  flex: 1 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: $padding-tb $padding-sides;
+}
+
+
+
+
+.header {
+    flex: 0 0 5%;
+}
+
+
+.container {
+    flex: 1 0 auto;
+    overflow-y: auto;
+}
+
+.footer {
+    flex: 0 0 2%;
+}
