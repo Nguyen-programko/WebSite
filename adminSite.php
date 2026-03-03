@@ -16,6 +16,9 @@
         <label class="book-form__label" for="genre">Book's genre</label>
         <input class="book-form__input" type="text" name="genre" required>
 
+        <label class="book-form__label" for="sinopsis">Book's sinopsis</label>
+        <input class="book-form__input" type="text" name="sinopsis" required>
+
         <label class="book-form__label" for="year">Year of release</label>
         <input class="book-form__input" type="number" name="year" min="0" max="9999" required>
 
