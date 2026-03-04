@@ -1,5 +1,6 @@
 # Požadavky
-  Docker
+  Spuštěný Docker  
+  
   Git
 
 # Přihlašovací údaje
