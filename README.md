@@ -37,7 +37,6 @@ Přihlašovací údaje aplikace lze změnit v booksdb.sql přidáním nebo změn
       MYSQL_ROOT_PASSWORD: Zde heslo
       
   ### Pokud se změní heslo je třeba upravit "src\classes\database.class.php"
-    <?php 
     $db_server = "mysql";
     $db_user = "root";
     $db_pass = "tvoje heslo";
