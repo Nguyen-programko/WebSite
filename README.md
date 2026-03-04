@@ -1,3 +1,3 @@
 # Přihlašovací údaje
   ## MYSQL databáze
-    **User:** admin
+    **User**: admin
