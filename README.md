@@ -25,8 +25,8 @@
 
 ## Úprava přihlašovacích údajů
 Přihlašovací údaje aplikace lze změnit v booksdb.sql přidáním nebo změny záznamu. (heslo musí být hash z PHP)
-    INSERT INTO `users` (`ID`, `username`, `password`) VALUES 
-    (1, 'Admin', '$2y$10$OiKMnY19hGET7WidMyC/HOwWJKT6nDkeuZeGDgIIWIJiTM0xMxtz2');
+    
+    INSERT INTO `users` (`ID`, `username`, `password`) VALUES  (1, 'Admin', '$2y$10$OiKMnY19hGET7WidMyC/HOwWJKT6nDkeuZeGDgIIWIJiTM0xMxtz2');
 
 ## Heslo MYSQL databáze lze změnít v docker-compose.yml
     mysql:
