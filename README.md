@@ -4,12 +4,12 @@
   Git
 
 # Přihlašovací údaje
-  MYSQL databáze
-    **Jméno:** root
-    **Heslo:** root
-  Aplikace
-    **Jméno:** admin
-    **Heslo:** heslo
+  MYSQL databáze  
+    **Jméno:** root  
+    **Heslo:** root  
+  Aplikace  
+    **Jméno:** admin  
+    **Heslo:** heslo  
 
 
 # Instalace a konfigurace
