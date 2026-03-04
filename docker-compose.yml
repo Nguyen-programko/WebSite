@@ -16,7 +16,7 @@ services:
     ports:
       - "3306:3306"
     volumes:
-      - C:\xampp\htdocs\WebSite\booksdb.sql:/docker-entrypoint-initdb.d/booksdb.sql
+      - ./booksdb.sql:/docker-entrypoint-initdb.d/booksdb.sql
 
   phpmyadmin:
     image: phpmyadmin
