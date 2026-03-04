@@ -51,7 +51,7 @@ class Books {
             }
 
             if ($isValid) {
-                Books::addBookDB(Books::sanitizeBook($book));
+                $this->addBookDB($this->sanitizeBook($book));
             }
         }
     }
