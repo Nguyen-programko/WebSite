@@ -15,8 +15,10 @@
   ## Klonování repozitáře
     git clone https://github.com/Nguyen-programko/WebSite.git
     cd WebSite
-  ## Spuštění kontejnerů
+  ## Spuštění kontejneru
     docker-compose up -d
+  Je nutne počkat na inicializaci MYSQL. Trvá déle než inicializace aplikace.
+  
   ## Linky
     Aplikace:   http://localhost:8080
     phpMyAdmin: http://localhost:8081
