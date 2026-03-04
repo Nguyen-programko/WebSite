@@ -7,6 +7,7 @@
   MYSQL databáze  
     **Jméno:** root  
     **Heslo:** root  
+      
   Aplikace  
     **Jméno:** admin  
     **Heslo:** heslo  
